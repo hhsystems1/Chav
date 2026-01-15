@@ -108,7 +108,7 @@ const Chatbot = () => {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 bg-gradient-to-br from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 ${
+        className={`fixed bottom-6 right-6 z-50 bg-gradient-to-br from-primary to-sky-600 hover:from-sky-600 hover:to-primary text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 ${
           isOpen ? 'rotate-180' : ''
         }`}
       >
@@ -136,7 +136,7 @@ const Chatbot = () => {
             <div className="bg-gradient-to-r from-secondary to-gray-900 p-4 text-white">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-gradient-to-br from-primary to-orange-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-lg">
+                  <div className="bg-gradient-to-br from-primary to-sky-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-lg">
                     CC
                   </div>
                   <div>

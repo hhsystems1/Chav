@@ -28,14 +28,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-br from-primary to-orange-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center font-bold text-lg md:text-xl shadow-lg">
+            <div className="bg-gradient-to-br from-primary to-sky-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center font-bold text-lg md:text-xl shadow-lg">
               CC
             </div>
             <div>
-              <h1 className="font-heading font-bold text-lg md:text-xl text-secondary">
+              <h1 className="font-heading font-bold text-lg md:text-xl bg-gradient-to-r from-secondary to-slate-700 bg-clip-text text-transparent">
                 Chavarria Concrete
               </h1>
-              <p className="text-xs text-gray-600 hidden sm:block">Colorado's Trusted Experts</p>
+              <p className="text-xs text-gray-500 hidden sm:block">Colorado's Trusted Experts</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-sm lg:text-base">
               Gallery
             </button>
-            <button onClick={() => scrollToSection('book')} className="bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg text-sm lg:text-base">
+            <button onClick={() => scrollToSection('book')} className="btn-secondary py-2 px-6 text-sm lg:text-base">
               Book Now
             </button>
           </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
               <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-left py-2">
                 Gallery
               </button>
-              <button onClick={() => scrollToSection('book')} className="bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-md w-full mt-2">
+              <button onClick={() => scrollToSection('book')} className="btn-secondary py-3 px-6 w-full mt-2">
                 Book Now
               </button>
             </div>
