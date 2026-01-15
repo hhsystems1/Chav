@@ -108,16 +108,16 @@ const Chatbot = () => {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 bg-gradient-to-br from-primary to-sky-600 hover:from-sky-600 hover:to-primary text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 ${
+        className={`fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 bg-gradient-to-br from-primary to-sky-600 hover:from-sky-600 hover:to-primary text-white p-3 md:p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 ${
           isOpen ? 'rotate-180' : ''
         }`}
       >
         {isOpen ? (
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         ) : (
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
         )}
@@ -130,8 +130,8 @@ const Chatbot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-full max-w-md animate-slide-up">
-          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div className="fixed bottom-20 md:bottom-24 right-0 md:right-6 left-0 md:left-auto z-50 w-full md:max-w-md px-4 md:px-0 animate-slide-up">
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[calc(100vh-8rem)] md:max-h-[600px] flex flex-col">
             {/* Header */}
             <div className="bg-gradient-to-r from-secondary to-gray-900 p-4 text-white">
               <div className="flex items-center justify-between">
@@ -156,7 +156,7 @@ const Chatbot = () => {
             </div>
 
             {/* Messages */}
-            <div className="h-96 overflow-y-auto p-4 bg-gray-50">
+            <div className="flex-1 overflow-y-auto p-4 bg-gray-50 min-h-[300px] max-h-[400px] md:h-96">
               {messages.map((message, index) => (
                 <div
                   key={index}

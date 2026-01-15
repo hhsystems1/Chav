@@ -48,7 +48,7 @@ const BookAppointment = () => {
   }
 
   return (
-    <section id="book" className="py-20 md:py-32 bg-gradient-to-br from-secondary via-gray-900 to-secondary relative overflow-hidden">
+    <section id="book" className="py-20 md:py-32 bg-gradient-to-br from-secondary via-gray-900 to-secondary relative overflow-hidden scroll-mt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{

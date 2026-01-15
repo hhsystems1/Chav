@@ -39,7 +39,7 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-gradient-to-br from-white via-sky-50 to-blue-50">
+    <section id="services" className="py-20 md:py-32 bg-gradient-to-br from-white via-sky-50 to-blue-50 scroll-mt-20">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-slide-up">
