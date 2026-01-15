@@ -22,52 +22,52 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg py-4' : 'bg-white/95 py-6'
+      isScrolled ? 'bg-white shadow-xl py-2' : 'bg-white/98 backdrop-blur-sm py-3'
     }`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center font-bold text-xl">
+            <div className="bg-gradient-to-br from-primary to-orange-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center font-bold text-lg md:text-xl shadow-lg">
               CC
             </div>
             <div>
-              <h1 className="font-heading font-bold text-2xl text-primary">
+              <h1 className="font-heading font-bold text-lg md:text-xl text-secondary">
                 Chavarria Concrete
               </h1>
-              <p className="text-xs text-gray-600">Colorado's Trusted Concrete Experts</p>
+              <p className="text-xs text-gray-600 hidden sm:block">Colorado's Trusted Experts</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-medium transition-colors">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-sm lg:text-base">
               Home
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-primary font-medium transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-sm lg:text-base">
               About
             </button>
-            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-primary font-medium transition-colors">
+            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-sm lg:text-base">
               Services
             </button>
-            <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary font-medium transition-colors">
+            <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-sm lg:text-base">
               Gallery
             </button>
-            <button onClick={() => scrollToSection('book')} className="btn-secondary">
-              Book Appointment
+            <button onClick={() => scrollToSection('book')} className="bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg text-sm lg:text-base">
+              Book Now
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-secondary p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -75,22 +75,22 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-in">
-            <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-medium transition-colors text-left">
+          <div className="md:hidden mt-3 pb-3 animate-fade-in border-t border-gray-200 pt-3">
+            <div className="flex flex-col space-y-3">
+              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-left py-2">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-primary font-medium transition-colors text-left">
+              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-left py-2">
                 About
               </button>
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-primary font-medium transition-colors text-left">
+              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-left py-2">
                 Services
               </button>
-              <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary font-medium transition-colors text-left">
+              <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary font-semibold transition-colors text-left py-2">
                 Gallery
               </button>
-              <button onClick={() => scrollToSection('book')} className="btn-secondary w-full">
-                Book Appointment
+              <button onClick={() => scrollToSection('book')} className="bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-md w-full mt-2">
+                Book Now
               </button>
             </div>
           </div>

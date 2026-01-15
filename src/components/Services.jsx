@@ -39,11 +39,11 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-20 md:py-32 bg-gradient-to-br from-gray-50 via-orange-50 to-amber-50">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-slide-up">
-          <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-bold mb-4">
             Our Services
           </div>
 
@@ -90,7 +90,7 @@ const Services = () => {
               </ul>
 
               {/* CTA */}
-              <button className="mt-6 w-full bg-primary/5 hover:bg-primary hover:text-white text-primary font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+              <button className="mt-6 w-full bg-primary/5 hover:bg-gradient-to-r hover:from-primary hover:to-orange-600 hover:text-white text-primary font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-sm hover:shadow-lg transform hover:scale-105">
                 Learn More
               </button>
             </div>
@@ -99,12 +99,12 @@ const Services = () => {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center animate-fade-in">
-          <p className="text-xl text-gray-700 mb-6">
+          <p className="text-xl font-semibold text-gray-800 mb-6">
             Don't see what you're looking for?
           </p>
           <button
             onClick={() => document.getElementById('book').scrollIntoView({ behavior: 'smooth' })}
-            className="btn-secondary text-lg"
+            className="bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 text-lg"
           >
             Contact Us for Custom Projects
           </button>

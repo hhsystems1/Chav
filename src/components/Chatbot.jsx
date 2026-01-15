@@ -108,7 +108,7 @@ const Chatbot = () => {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 bg-accent hover:bg-amber-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 ${
+        className={`fixed bottom-6 right-6 z-50 bg-gradient-to-br from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 ${
           isOpen ? 'rotate-180' : ''
         }`}
       >
@@ -133,15 +133,15 @@ const Chatbot = () => {
         <div className="fixed bottom-24 right-6 z-50 w-full max-w-md animate-slide-up">
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             {/* Header */}
-            <div className="bg-gradient-to-r from-primary to-blue-900 p-4 text-white">
+            <div className="bg-gradient-to-r from-secondary to-gray-900 p-4 text-white">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-accent w-10 h-10 rounded-full flex items-center justify-center font-bold">
+                  <div className="bg-gradient-to-br from-primary to-orange-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-lg">
                     CC
                   </div>
                   <div>
                     <h3 className="font-bold">Chavarria Concrete</h3>
-                    <p className="text-xs text-blue-100">Online now</p>
+                    <p className="text-xs text-gray-300">Online now</p>
                   </div>
                 </div>
                 <button
