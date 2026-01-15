@@ -7,7 +7,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-24 md:pt-28 overflow-hidden scroll-mt-0">
       {/* Background Video/Image Placeholder */}
       <div className="absolute inset-0 z-0">
         {/*
