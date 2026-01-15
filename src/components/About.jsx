@@ -5,30 +5,30 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
           <div className="relative animate-slide-in-left">
-            <div className="relative h-96 md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative h-96 md:h-[600px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
               {/* Placeholder for your about image */}
-              <div className="w-full h-full bg-gradient-to-br from-primary to-blue-900 flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-primary via-sky-500 to-highlight flex items-center justify-center">
                 <div className="text-center text-white p-8">
                   <svg className="w-32 h-32 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
-                  <p className="text-lg font-semibold">Your Company Photo Here</p>
-                  <p className="text-sm mt-2 opacity-75">Team at work, equipment, or completed project</p>
+                  <p className="text-lg font-bold">Your Company Photo Here</p>
+                  <p className="text-sm mt-2 opacity-90">Team at work, equipment, or completed project</p>
                 </div>
               </div>
               {/* Replace above div with: <img src="/path/to/your/about-image.jpg" alt="Chavarria Concrete Team" className="w-full h-full object-cover" /> */}
             </div>
 
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-xl shadow-2xl max-w-xs">
-              <div className="text-4xl font-bold">15+</div>
-              <div className="text-sm mt-1">Years of Excellence in Concrete Work</div>
+            <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-accent via-orange-500 to-accent text-white p-6 rounded-2xl shadow-2xl max-w-xs backdrop-blur-sm border border-orange-400/20">
+              <div className="text-5xl font-bold">15+</div>
+              <div className="text-sm mt-2 font-semibold">Years of Excellence in Concrete Work</div>
             </div>
           </div>
 
           {/* Content Section */}
           <div className="animate-slide-in-right">
-            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-bold mb-4">
               About Us
             </div>
 
@@ -57,7 +57,7 @@ const About = () => {
             {/* Features */}
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="flex items-start space-x-3">
-                <div className="bg-primary text-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="bg-gradient-to-br from-primary to-sky-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold shadow-lg">
                   ✓
                 </div>
                 <div>
@@ -67,7 +67,7 @@ const About = () => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <div className="bg-primary text-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="bg-gradient-to-br from-primary to-sky-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold shadow-lg">
                   ✓
                 </div>
                 <div>
@@ -77,7 +77,7 @@ const About = () => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <div className="bg-primary text-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="bg-gradient-to-br from-primary to-sky-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold shadow-lg">
                   ✓
                 </div>
                 <div>
@@ -87,7 +87,7 @@ const About = () => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <div className="bg-primary text-white w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="bg-gradient-to-br from-primary to-sky-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold shadow-lg">
                   ✓
                 </div>
                 <div>

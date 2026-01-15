@@ -48,7 +48,7 @@ const BookAppointment = () => {
   }
 
   return (
-    <section id="book" className="py-20 md:py-32 bg-gradient-to-br from-primary to-blue-900 relative overflow-hidden">
+    <section id="book" className="py-20 md:py-32 bg-gradient-to-br from-secondary via-gray-900 to-secondary relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -56,15 +56,19 @@ const BookAppointment = () => {
         }}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-20 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+
+      <div className="container mx-auto px-4 relative z-10 max-w-7xl">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12 animate-slide-up">
-            <div className="inline-block bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block bg-gradient-to-r from-accent to-yellow-500 text-gray-900 px-6 py-2 rounded-full text-sm font-bold mb-4 shadow-lg">
               Get Started
             </div>
 
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Book Your Free Consultation
             </h2>
 
